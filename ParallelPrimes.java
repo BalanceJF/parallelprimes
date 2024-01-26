@@ -38,8 +38,9 @@ public class ParallelPrimes extends Thread {
         System.out.println(counter.getCount());
     }
 
+    // Checks all odd divisors up to the square root of the number (odd because we only calculate on odd numbers)
     private static boolean isPrime(long num) {
-        for (int i = 2; i * i <= num; i++) {
+        for (int i = 3; i * i <= num; i += 2) {
             if (num % i == 0) {
                 return false;
             }
