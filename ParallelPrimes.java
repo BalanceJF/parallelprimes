@@ -30,11 +30,12 @@ public class ParallelPrimes extends Thread {
         long i = counter.getAndIncrement();
         while (i < maxNum) {
             if (isPrime(i)) {
-                counter.addToSum(i);
+                counter.addPrime(i);
             }
             i = counter.getAndIncrement();
         }
         System.out.println(counter.getSum());
+        System.out.println(counter.getCount());
     }
 
     private static boolean isPrime(long num) {
