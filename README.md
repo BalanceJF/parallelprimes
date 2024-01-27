@@ -1,5 +1,5 @@
 *********************************
-PARALLEL PRIMES README
+# Parallel Primes Readme
 *********************************
 
 This program was written for a hypothetical manager as part of a university assignment. The following is a set of instructions on operating the program as part of those requirements:
