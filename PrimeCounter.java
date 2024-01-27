@@ -20,7 +20,7 @@ public class PrimeCounter {
         primesFound += 1;
         sum += num;
         // Keep a sorted array that we add to the bottom of 
-        if (num > 99999000 && num > topPrimes[0]) {
+        if (num > topPrimes[0]) {
             topPrimes[0] = num;
             Arrays.sort(topPrimes);
         }
