@@ -9,7 +9,7 @@ import java.util.concurrent.CountDownLatch;
 
 public class ParallelPrimes extends Thread {
     private static final long maxNum = 100000000;
-    private static final int numThreads = 1;
+    private static final int numThreads = 8;
     private PrimeCounter counter;
     private CountDownLatch latch;
 
