@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class PrimeCounter {
     // We want our primes to count on odd numbers, and just already include 2 in the calculation.
     // This ensures no need to check even numbers at any point.
@@ -17,7 +19,11 @@ public class PrimeCounter {
     public synchronized void addPrime(long num) {
         primesFound += 1;
         sum += num;
-        topPrimes[(int)(primesFound % 10)] = num;
+        // Keep a sorted array that we add to the bottom of 
+        if (num > 99999000 && num > topPrimes[0]) {
+            topPrimes[0] = num;
+            Arrays.sort(topPrimes);
+        }
     }
 
     public long getSum() {
