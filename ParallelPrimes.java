@@ -54,6 +54,9 @@ public class ParallelPrimes extends Thread {
         Arrays.sort(topPrimes);
         // no specific formatting given for list, so I used default
         outPrint.println(Arrays.toString(topPrimes));
+
+        // VS Code told me it was sad that I never closed this stream
+        outPrint.close();
     }
 
     private static void primePrint(PrimeCounter counter) {
