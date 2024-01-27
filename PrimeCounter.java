@@ -28,7 +28,7 @@ public class PrimeCounter {
         return primesFound;
     }
 
-    public int[] getTopPrimes() {
+    public long[] getTopPrimes() {
         return topPrimes;
     }
 }

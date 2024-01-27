@@ -45,7 +45,7 @@ public class ParallelPrimes extends Thread {
         double totalTime = Duration.between(startTime, endTime).toMillis() / 1000.0;
 
         outPrint.println(totalTime + "s " + counter.getPrimesFound() + " " + counter.getSum());
-        int [] topPrimes = counter.getTopPrimes();
+        long[] topPrimes = counter.getTopPrimes();
         Arrays.sort(topPrimes);
         outPrint.println(Arrays.toString(topPrimes));
     }
